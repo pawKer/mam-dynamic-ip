@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  mam-dynamic-ip-whitelist:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: mam-dynamic-ip-whitelist
+    volumes:
+      - /volume1/docker/mam-dynamic-ip-whitelist:/usr/bin/local/data
+    restart: unless-stopped
+
