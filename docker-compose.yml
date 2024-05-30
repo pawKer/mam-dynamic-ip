@@ -7,6 +7,6 @@ services:
       dockerfile: Dockerfile
     container_name: mam-dynamic-ip-whitelist
     volumes:
-      - /volume1/docker/mam-dynamic-ip-whitelist:/usr/bin/local/data
+      - /path/to/volume/:/data
     restart: unless-stopped
 
